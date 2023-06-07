@@ -237,7 +237,7 @@ img {
     background-position: center;
     max-width: 768px;
     background-color: #2E2F42;
-    margin: 0 auto;
+    
     }
     .main-header {
     font-family: 'Roboto', sans-serif;
@@ -302,7 +302,7 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    margin-bottom: 8px
+    
 }
 .text-rob {
     font-family: 'Roboto', sans-serif;
@@ -318,7 +318,7 @@ img {
 }
 .four-section {
     background-color: var(--secondary-bg-color);
-    padding: 120px 0;
+    padding: 96px 0;
 }
 .section-for-four-container {
     display: flex;
@@ -348,10 +348,81 @@ img {
 }
 .container-for-workers {
     display: flex;
+    gap: 8px;
     flex-direction: column;
     justify-content: center;
         align-items: center;
 }
+.container-for-workers {
+    padding: 32px 0;
+}
+.social-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    gap: 24px;
+}
+.social-list-item {
+    
+}
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list-icon {
+    fill: #f4f4fd;
+    content: center;
+}
+.work-four-secend {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  
+  .customers-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    grid-row-gap: 72px;
+    justify-items: center;
+  }
+  
+  .customers-link-item {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+  }
+  
+  .customers-link-ic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    width: 190px;
+  }
+  
+  .social-list-ic {
+    /* Стили для иконки */
+  }
+  
+  .customers {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-align: center;
+    padding-bottom: 72px;
+  }
+
     }
 
 
@@ -563,9 +634,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
 
 
-.container-for-workers {
-    padding: 32px 0;
-}
+
 
 
 .header-plus {
@@ -732,25 +801,9 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     align-items: center;
 }
 
-.social-list {
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
-    gap: 24px;
-}
 
-.social-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #4D5AE5;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+
 
 .social-list-link:hover,
 .social-list-link:focus {
@@ -787,33 +840,10 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     transform: translateY(0%);
 }
 
-.customers {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-    text-align: center;
-    margin-bottom: 72px;
-}
 
-.customers-list {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-}
 
-.customers-link-item {
-    border-radius: 4px;
-    width: calc((100% - 120px) / 6);
-    height: 88px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
+
 
 .customers-link-item>.customers-link-ic {
     display: flex;
@@ -845,9 +875,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-icon {
-    fill: #f4f4fd;
-}
+
 
 .new-secend-div {
     display: flex;
@@ -860,10 +888,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     margin-bottom: 8px;
 }
 
-.work-four-secend {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+
 
 .footer-div {
     display: flex;
