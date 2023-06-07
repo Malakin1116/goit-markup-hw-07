@@ -408,7 +408,7 @@ img {
   }
   
   .social-list-ic {
-    /* Стили для иконки */
+    
   }
   
   .customers {
@@ -422,7 +422,22 @@ img {
     text-align: center;
     padding-bottom: 72px;
   }
-
+  .our-footer-end {
+    background-color: var(--primary-text-color);
+    padding: 100px 0;
+}
+.footer-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;}
+/* .footer-div-one {
+    margin-right: 120px;
+} */
+.ul-social-media {
+    display: flex;
+    justify-content: center;
     }
 
 
@@ -655,10 +670,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.our-footer-end {
-    background-color: var(--primary-text-color);
-    padding: 100px 0;
-}
+
 
 /* кнопка */
 /*  
@@ -890,14 +902,9 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 
 
 
-.footer-div {
-    display: flex;
-    align-items: baseline;
-}
 
-.footer-div-one {
-    margin-right: 120px;
-}
+
+
 
 .footer-dav-two {
     margin-right: 80px;
