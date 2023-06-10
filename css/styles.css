@@ -522,7 +522,7 @@ img {
     justify-content: center; 
     align-items: center; 
     gap: 16px;
-    margin-top: 16px;
+    
 }
 .footer-div-three-p {
     font-weight: 500;
@@ -821,6 +821,8 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 @media screen and (min-width:768px) {
     .container {
         width: 768px;
+        padding-left: 16px;
+    padding-right: 16px;
     }
     .button-for-tell-menu {display: none;
     }
@@ -847,7 +849,6 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         text-transform: uppercase;
         color: #404bbf;
         flex-direction: row;}
-         /* ?чому не унаслідує? */
     .span {
             color: var(--primary-text-color);
         }
@@ -893,13 +894,13 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         align-items: center;
     }
     .adress-contact-mail {
-        font-size: 16px;
+        font-size: 12px;
         position: relative;
-        line-height: 1.5;
+        line-height: 1.17;
         letter-spacing: 0.02em;
         color: var(--title-text-color);
         }
-        /* для дептопа переделать на топ 24px */
+       
     .line::after {
     content: "";
     position: absolute;
@@ -1097,8 +1098,10 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     background-color: var(--btn-hover-color);
 }
 .work-four-secend {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    display: flex;
+        padding-top: 96px;
+        padding-bottom: 96px;
+        justify-content: center;
   }
   .customers-link-item { 
    
@@ -1158,35 +1161,37 @@ justify-content: center;
     fill: currentColor;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-footer-end {
+ .our-footer-end {
     background-color: var(--primary-text-color);
-    padding: 100px 0;
-    
+    padding-top: 100px;
+    padding-bottom: 100px; 
   }
-  
+  .div-work-four-secend {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    align-content: center;}
+      
   .footer-div {
-    display: flex;
+       display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    column-gap: 16px;
-    row-gap: 72px;
+    margin: 0 auto 0 auto;
+    width: 584px;
+    gap: 72px 24px;
+    flex-direction: unset;
+    justify-content: left;
   }
-  
-  .footer-div-one,
-  .footer-dav-two {
-    
+  .footer-dav-three {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Изменено на align-items: center; */
-  }
-  
-  .modal-contact-form-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Добавлено justify-content: center; */
-    align-items: center;
-    gap: 16px;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+       
+        flex-wrap: nowrap;
+        align-content: space-around;
+        justify-content: center;
   }
   
   
@@ -1262,7 +1267,7 @@ justify-content: center;
     font-weight: 500;
     display: block;
     width: 100%;
-    padding-bottom: 16px;
+    
     text-align: start;
     font-size: 16px;
     line-height: 1.5;
@@ -1272,10 +1277,16 @@ justify-content: center;
   
   .modal-contact-label-wrapper {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    
   }
-  
+  .modal-contact-form-footer {
+    display: flex;
+        flex-direction: row;
+        gap: 16px;
+  }
   .footer-contact-form-input {
     width: 264px;
     height: 40px;
@@ -1426,6 +1437,7 @@ justify-content: center;
         transform: translateY(-50%);
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+    
     .contact-form-input:focus+.form-class-svg,
     .form-class-svg:hover {
         fill: #4D5AE5;
@@ -1540,6 +1552,7 @@ justify-content: center;
         border: none;
         fill: #FFFFFF;
 } 
+}
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -1548,6 +1561,18 @@ justify-content: center;
         padding-right: 15px;
         margin: 0 auto;
     }
+         .page-header {
+            border-bottom: 1px solid #e7e9fc;
+                box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    
+         }
+        .div-pead-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+         .page-navigation  {padding-left: 156px;}
+
     .modal {
         position: absolute;
         top: 50%;
@@ -1575,6 +1600,66 @@ justify-content: center;
     .modal-div-form-contact {
         margin-bottom: 8px;
     }
+        .header-menu {
+            padding: 24px 0 20px 76px;
+            
+        }
+
+        .adress-header {
+            display: flex;
+            flex-direction: row;
+            padding: 24px 0 24px 332px;
+            gap: 40px;
+            align-items: center;
+        }
+                
+        .adress-contact-mail {
+                    font-size: 16px;
+                    position: relative;
+                    line-height: 1.5;
+                    letter-spacing: 0.02em;
+                    color: var(--title-text-color);
+                }
+        .line::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    left: 0;
+                    bottom: -1px;
+                    display: block;
+                    color: #404bbf;
+                    background-color: #404BBF;
+                    border-radius: 2px;
+                    transition: #404BBF;
+                    margin-top: 24px;
+                    opacity: 1;
+                }
+        .adress-contact-mail:hover,
+        .adress-contact-mail:focus {
+                    color: var(--btn-hover-color);
+                    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                    transition-duration: 250ms;
+                }
+        
+        .first-section {}
+
+                /* для десктопа переделат ьпод 188px */
+                .banner {
+                    display: flex;
+                    gap: 36px;
+                    flex-direction: column;
+                    text-align: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding-top: 188px;
+                    padding-bottom: 188px;
+                    background-color: #2E2F42;
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 100%;
+                }
 }
 
 
