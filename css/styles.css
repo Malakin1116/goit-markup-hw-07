@@ -209,7 +209,8 @@ img {
         text-align: center;
     }
 .ul-social-media-for-tell {
-        margin-top: 51px;
+        margin-top: 48px;
+        padding-bottom: 40px;
         display: flex;
         gap: 56px;
     }
