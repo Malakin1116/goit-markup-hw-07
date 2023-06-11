@@ -834,7 +834,7 @@ img {
 }
 /* portfolio */
 .port-first-section {
-/* width: 100%; */
+ width: 100%; 
 }
 .buttons-list {
     display: flex;
@@ -891,9 +891,53 @@ transition-property: background-color;
         0px 2px 2px rgba(0, 0, 0, 0.12);
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-duration: 250ms;}
-.workers-li {
-    display: flex;
-}
+.a-shadow-portfolio:focus .employees-list-img-wrapper .overlay {
+    transform: translateY(0%);
+  }
+  .a-shadow-portfolio {
+    display: block;
+    transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+    
+    .a-shadow-portfolio:hover,
+    .a-shadow-portfolio:focus {
+    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+        transform: translateY(0%);}
+        .employees-list-img-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+        .overlay {
+            background-color:#4D5AE5;
+            padding: 40px 32px 164px 32px;
+            color: #FFFFFF;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            transform: translate(0px, 100%); 
+            color:#f4f4fd;
+            padding: 40px 32px;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+         .employees-list-img-wrapper:hover .overlay {
+            transform: translateY(0%);
+          }
+.text-rob-portfolio-display {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+}   
 }
 
 @media screen and (min-width: 320px) and (max-width: 427px) {
@@ -914,6 +958,9 @@ transition-property: background-color;
     .ul-social-media-for-tell {
         gap: 11%;
     }
+    /* .display-center {
+        display: flex;
+    } */
 }
 
 @media screen and (min-width: 428px) and (max-width: 767px){
@@ -1664,6 +1711,126 @@ transition-property: background-color;
         border: none;
         fill: #FFFFFF;
 } 
+
+/* portfolio */
+.port-first-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+    }
+    .buttons-list {
+        display: flex;
+        column-gap: 24px;
+        row-gap: 16px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 48px;
+        padding-top: 48px;
+    }
+    
+    .bts-one {
+        background-color:  var(--secondary-bg-color);
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: var(--accent-color);
+        cursor: pointer;
+        display: block;
+        border-radius: 4px;
+        padding: 8px 16px 8px 16px;
+        display: inline-block;
+        min-width: 53px;
+        border: 1px solid #E7E9FC;
+    transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
+    
+    .bts-one:hover,
+    .bts-one:focus {
+        color: var(--primary-bg-color);
+        background-color: var(--btn-hover-color);
+        border: 1px solid transparent;}
+        .workers {
+            display: flex;
+        flex-wrap: wrap;
+        width: 100%; 
+        column-gap: 24px;
+        row-gap: 48px;
+        align-items: center;
+        justify-content: center;
+    }
+    .shadow {text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);}
+    
+    .shadow-click:hover,
+    .shadow-click:focus {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 2px 1px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-duration: 250ms;}
+    .a-shadow-portfolio:focus .employees-list-img-wrapper .overlay {
+        transform: translateY(0%);
+      }
+      .a-shadow-portfolio {
+        display: block;
+        transition-property: box-shadow;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+        
+        .a-shadow-portfolio:hover,
+        .a-shadow-portfolio:focus {
+        box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+            transform: translateY(0%);}
+            .employees-list-img-wrapper {
+                position: relative;
+                overflow: hidden;
+            }
+            .overlay {
+                background-color:#4D5AE5;
+                padding: 40px 32px 164px 32px;
+                color: #FFFFFF;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                overflow: auto;
+                transform: translate(0px, 100%); 
+                color:#f4f4fd;
+                padding: 40px 32px;
+                transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            
+             .employees-list-img-wrapper:hover .overlay {
+                transform: translateY(0%);
+              }
+    .text-rob-portfolio-display {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #F4F4FD;
+    }   
+     .display-center {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+   
+    
 }
 
 @media screen and (min-width: 1158px) {
