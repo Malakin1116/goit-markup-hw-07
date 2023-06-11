@@ -844,6 +844,12 @@ img {
     .footer-contact-form-input {
         width: 240px;
     }
+    .mobile-tell-modal-link  {
+        font-size: 26px;
+    }
+    .ul-social-media-for-tell {
+        gap: 11%;
+    }
 }
 
 @media screen and (min-width: 428px) and (max-width: 767px){
