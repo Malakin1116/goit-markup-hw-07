@@ -65,10 +65,12 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px){
+    
+}
+@media screen and (min-width: 428px) and (max-width: 767px){
 .container {
-        width: 396px;
+        width: 428px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -145,6 +147,7 @@ img {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+        overflow: auto;
     }
 .mobal-menu-container {
         position: relative;
@@ -182,7 +185,7 @@ img {
         display: flex;
         flex-direction:column;
         gap: 40px;
-        padding-top: 281px;
+        margin-top: 281px;
         margin-left: 0px;
     }
 .mobile-tell-modal-link {
@@ -209,14 +212,14 @@ img {
         text-align: center;
     }
 .ul-social-media-for-tell {
-        padding-top: 51px;
+        margin-top: 51px;
         display: flex;
         gap: 56px;
     }
 .li-social-media-for-tell {
         height: 40px;
         width: 40px;
-        background-color:#222c8d;
+        background-color:#4D5AE5;
         border-radius: 50%;
     }
 .a-socail-media-for-tell {
@@ -226,18 +229,23 @@ img {
         width: 100%;
         height: 100%;
     }
+    .first-section {
+        padding-top: 112px;
+        padding-bottom: 112px;
+       }
 .banner {
     background-color: var(--primary-text-color);
     text-align: center;
-    padding-top: 112px;
-    padding-bottom: 188px;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile/dark-bg.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 768px;
+    max-width: 428px;
     background-color: #2E2F42;
-    
+    margin-left: auto; 
+    margin-right: auto;
     }
 .main-header {
     font-family: 'Roboto', sans-serif;
@@ -250,7 +258,7 @@ img {
     max-width: 496px;
     text-align: center;
     margin: 0 auto 0 auto;
-    padding-bottom: 72px ;
+    margin-bottom: 72px ;
 }
 .modal-open-btn {
     display: block;
@@ -346,6 +354,18 @@ img {
         align-items: center;
         gap: 72px;
 }
+.four-section-assembly-list-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-bg-color);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    padding-bottom: 32px;
+ }
 .container-for-workers {
     display: flex;
     gap: 8px;
@@ -367,8 +387,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    
+     width: 40px;
+    height: 40px; 
     border-radius: 50%;
     background-color: #4D5AE5;
     transition-property: background-color;
@@ -385,6 +406,7 @@ img {
   }
   .customers-link-item {}
   .customers-link-item>.customers-link-ic {
+    width: 190px;
     display: flex;
     border-radius: 4px;
     color: #8e8f99;
@@ -417,7 +439,10 @@ img {
     width: 175px; 
   }
   .social-list-ic {}
-  
+  .customers-link-ic svg {
+      width: 110px;
+      height: 56px;
+  }
 .customers {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -440,7 +465,8 @@ img {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 16px;}
+    gap: 72px;}
+
 .footer-div-one {
     display: flex;
     justify-content: center;
@@ -807,14 +833,6 @@ img {
 }
 
 
- /* 2x */
-@media screen and (min-device-pixal-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (min-width: 767px) {
-    .banner {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile/dark-bgx2.webp);
-    }
-}
 
 
 
@@ -921,24 +939,29 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     color: var(--btn-hover-color);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;} 
+
     .first-section {
+        padding-top: 112px;
+        padding-bottom: 112px;
        }
 
-    /* для десктопа переделат ьпод 188px */
+    
     .banner {
         display: flex;
-        gap: 36px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile/dark-bg.webp);
         flex-direction: column;
         text-align: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        max-width: 768px;
         padding-top: 112px;
         padding-bottom: 112px;
         background-color: #2E2F42;
         margin: 0 auto;
         width: 100%;
         height: 100%;
+        align-items: center;
     } 
     .main-header {
         font-family: 'Roboto', sans-serif;
@@ -950,7 +973,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         color: var(--primary-bg-color);
         max-width: 496px;
         text-align: center;
-        margin: 0 auto 48px auto;
+        margin: 0 auto 36px auto;
     }
     .modal-open-btn {
         display: block;
@@ -1052,15 +1075,19 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
+        justify-content: center;
     }
  .four-section-assembly-list-one {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     text-align: center;
-       
-    flex-basis: calc((100% - 24px) / 2) ;
-    background-color: #ffffff;
+    background-color: var(--primary-bg-color);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
     padding-bottom: 32px;
  }
  .social-list {
@@ -1090,9 +1117,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.picture {
-    width: 100%;
-}
+
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: var(--btn-hover-color);
@@ -1108,19 +1133,16 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 }
   .customers-link-item>.customers-link-ic {
     display: flex;
-    
+     height: 88px;
+    width: 168px;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
     color: #8e8f99;
     border: 1px solid #8e8f99;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers-link-ic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     height: 88px;
-    width: 168px; 
-  }
+
   .customers-link-ic:hover,
 .customers-link-ic:focus,
 .customers-link-item:hover,
@@ -1632,11 +1654,13 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     .banner {
                     display: flex;
                     gap: 48px;
+                    
                     flex-direction: column;
                     text-align: center;
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
+                    max-width: 1158px;
                     padding-top: 188px;
                     padding-bottom: 188px;
                     background-color: #2E2F42;
@@ -1665,7 +1689,7 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 }
 .main-header {
     text-align: center;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 48px auto;
 }
 .secend-section-box {
     display: flex;
@@ -1693,14 +1717,14 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 }
 
 
-.four-section-assembly-list-one {
+/* .four-section-assembly-list-one {
     background-color: var(--primary-bg-color);
     flex-basis: calc((100% - 48%)/4);
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+} */
 .ul-for-secend-section {}
 .secent-section-block-first {
     width: calc((100% - 72px) / 4);
@@ -1708,13 +1732,11 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
 }
 .header-text {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     text-align: start;
-    letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    margin-bottom: 0px}
+    }
     .text-rob {font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -1862,18 +1884,6 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
     .footer-div-one {margin-right: 120px;}
     .footer-dav-two {margin-right: 80px;}
     
-    
-    
-    
-    .p-social-media {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color:#FFFFFF;
-        margin-bottom: 16px;
-    }
-    
     .ul-social-media {
         display: flex;
         gap: 16px;
@@ -1913,7 +1923,6 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         pointer-events: auto;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
     
     .modal-class-button {
         position: absolute;
@@ -1980,13 +1989,6 @@ screen and (min-resolution: 2dppx) and (min-width: 767px) {
         }
         .our-footer-a-span {color: var(--secondary-bg-color);}
         .text-footer{
-            font-family: 'Roboto', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
-            color: #F4F4FD;
             width: 264px ;}
 
             .modal-contact-form-footer {display: flex; gap: 24px;}
@@ -2031,3 +2033,13 @@ fill: white;
 margin-left: 16px ;
 }
 }
+
+ /* 2x */
+ @media screen and (min-device-pixal-ratio: 2) and (max-width: 767px),
+ screen and (min-resolution: 192dpi) and (max-width: 767px),
+ screen and (min-resolution: 2dppx) and (min-width: 767px) {
+     .banner {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile/dark-bgx2.webp);
+     }
+ }
+ 
