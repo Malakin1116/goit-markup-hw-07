@@ -1674,7 +1674,7 @@ img {
             }
     .banner {
                     display: flex;
-                    gap: 48px;
+                    gap: 0px;
                     
                     flex-direction: column;
                     text-align: center;
