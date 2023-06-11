@@ -377,7 +377,7 @@ img {
 .social-list {
     display: flex;
     justify-content: center;
-    margin-top: 8px;
+
     gap: 24px;
 }
 .social-list-item {}
@@ -1114,7 +1114,7 @@ img {
  .social-list {
     display: flex;
     justify-content: center;
-    margin-top: 8px;
+    
     gap: 24px;
 }
 .container-for-workers {
